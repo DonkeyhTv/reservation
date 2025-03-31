@@ -1,4 +1,4 @@
-# Application de Réservation de Rendez-vous
+# Application de Réservation de Rendez-vous (React - Vite - Tailwind)
 
 Une application React permettant aux utilisateurs de réserver des créneaux horaires pour des rendez-vous. Elle propose un calendrier interactif, une sélection dynamique des créneaux horaires disponibles, et un système de gestion des créneaux adjacents pour éviter les créneaux vides entre deux rendez-vous.
 
