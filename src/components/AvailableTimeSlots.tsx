@@ -124,7 +124,7 @@ const AvailableTimeSlots: React.FC<AvailableTimeSlotsProps> = ({
     times: string[],
     section: 'morning' | 'afternoon',
   ) => (
-    <div className='grid grid-cols-4 gap-2'>
+    <div className='grid grid-cols-2 sm:grid-cols-4 gap-2'>
       {times.map(time => (
         <button
           key={time}
@@ -143,18 +143,18 @@ const AvailableTimeSlots: React.FC<AvailableTimeSlotsProps> = ({
   )
 
   return (
-    <div className='p-0 bg-white rounded-lg'>
-      <h2 className='text-xl font-semibold  p-2 rounded text-center text-gray-800 mb-2 mt-4'>
+    <div className='p-4 bg-white rounded-lg'>
+      <h2 className='text-xl font-semibold p-2 rounded text-center text-gray-800 mb-4 mt-4'>
         Disponibilité des créneaux pour le {selectedDate.format('DD/MM/YYYY')}
       </h2>
-      <div className='grid grid-cols-2 gap-8'>
+      <div className='grid gap-8 md:grid-cols-2'>
         <div>
-          <h3 className='text-lg font-medium text-center  mb-2'>Matin</h3>
+          <h3 className='text-lg font-medium text-center mb-2'>Matin</h3>
           {renderTimeSlots(timeSlotsMorning, 'morning')}
         </div>
 
         <div>
-          <h3 className='text-lg font-medium text-center  mb-2'>Après-midi</h3>
+          <h3 className='text-lg font-medium text-center mb-2'>Après-midi</h3>
           {renderTimeSlots(timeSlotsAfternoon, 'afternoon')}
         </div>
       </div>
